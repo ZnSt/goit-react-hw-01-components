@@ -1,5 +1,13 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --primary-color: #fff;
+  --text-color: #122236;
+  --secondary-text-color: #82909e;
+  --bg-secondary-color: #f3f6f9;
+  --bg-color: #e7ecf2;
+  --border-color: #b1a5ed;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +15,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 code {
