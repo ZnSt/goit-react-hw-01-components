@@ -8,8 +8,8 @@ export const Card = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: ${props => `${props.theme.colors.textColor}`};
+  background-color: ${props => `${props.theme.colors.bgColor}`};
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   border-bottom: none;
   border-radius: 20px;
@@ -26,19 +26,18 @@ export const Container = styled.div`
 export const Name = styled.p`
   margin-top: 20px;
   margin-bottom: 10px;
-  color: var(--secondary-text-color);
+  color: ${props => `${props.theme.colors.secondaryTextColor}`};
 `;
 
 export const Tag = styled.p`
-  margin: 0;
-  margin-bottom: 10px;
+  ${props => `${props.theme.colors.secondaryTextColor}`};
 
-  color: var(--secondary-text-color);
+  color: ${props => `${props.theme.colors.secondaryTextColor}`};
 `;
 
 export const Location = styled.p`
   margin: 0;
-  color: var(--secondary-text-color);
+  color: ${props => `${props.theme.colors.secondaryTextColor}`};
 `;
 
 export const Stats = styled.ul`
@@ -49,7 +48,7 @@ export const Stats = styled.ul`
   width: 500px;
   margin-top: 20px;
   margin-bottom: 0;
-  background-color: var(--border-color);
+  background-color: ${props => `${props.theme.colors.borderColor}`};
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom-left-radius: 20px;
