@@ -1,13 +1,40 @@
 import styled from '@emotion/styled';
 
 export const Table = styled.table`
-  margin: 60px auto;
-  width: 875px;
-  border-radius: 6px;
-  background-color: #ffffff;
-  overflow: hidden;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
-  text-align: center;
+  font-family: sans-serif;
   table-layout: fixed;
-  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+`;
+
+export const Thead = styled.thead`
+  background-color: ${props => `${props.theme.colors.colorThead}`};
+  color: ${props => `${props.theme.colors.primaryColor}`};
+`;
+
+export const Th = styled.th`
+  font-weight: bold;
+  padding: 20px;
+  background: ${props => props.theme.colors.colorThead};
+  border: 1px solid #dddddd;
+`;
+
+export const Tr = styled.tr`
+  color: ${props => `${props.theme.colors.red}`};
+`;
+
+export const Td = styled.td`
+  padding: 15px 10px;
+  border: 1px solid #eee;
+  text-align: center;
+`;
+
+export const Tbody = styled.tbody`
+  Tr:nth-child(odd) {
+    background: #fff;
+  }
+  Tr:nth-child(even) {
+    background: ${props => `${props.theme.colors.trColor}`};
+  }
 `;

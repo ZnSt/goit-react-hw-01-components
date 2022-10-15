@@ -14,6 +14,8 @@ const theme = {
     borderColor: '#b1a5ed',
     online: 'red',
     offline: 'green',
+    colorThead: '#00bfff',
+    trColor: '#c9e9ff',
   },
 };
 
